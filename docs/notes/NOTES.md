@@ -11,6 +11,7 @@
 3. **Phát triển từng phần nhỏ (Atomic Commits)** — viết code mới từng file/module từ đầu, đảm bảo commit sạch và rõ ràng.
 4. **Tài liệu phải đi kèm code** — cập nhật `docs/` song song với tiến độ công việc.
 5. **Git Flow chuẩn Agile Scrum** — làm việc trên nhánh tính năng (`feat/...`, `fix/...`), tạo PR lên `main`, review và merge.
+6. **Rà soát mã nguồn & Thương hiệu độc lập** — Thường xuyên rà soát mã nguồn, cấu hình, tài liệu để đảm bảo KHÔNG có bất kỳ thông tin hay nội dung nào đề cập đến việc copy từ dự án cũ hoặc các tên dự án cũ (`deplao`, `deplao-builder`, `babyvibe`). Tất cả tài sản mã nguồn và thương hiệu phải hoàn toàn nguyên bản và nhất quán với tên dự án **Phanle** (`anhnhatdev/phanle`).
 
 ---
 
