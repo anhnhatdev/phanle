@@ -101,14 +101,14 @@ P3 - Low (Backlog xa)
 
 ### Tasks Sprint 0
 
-- [ ] Tạo GitHub repo `phanle` (chính)
-- [ ] Setup nhánh main + branch protection
-- [ ] Khởi tạo cấu trúc project (copy từ PM cũ, đổi branding)
-- [ ] Đổi tất cả branding: tên app, appId, URLs, tên DB file
-- [ ] Setup GitHub Actions: build-all.yml
-- [ ] Setup GitHub Actions: test.yml (jest)
-- [ ] Thêm Claude vào contributors
-- [ ] Viết đủ tài liệu docs/
-- [ ] README.md PM mới
+- [x] Tạo GitHub repo `phanle` (chính)
+- [x] Setup nhánh main + branch protection
+- [x] Khởi tạo cấu trúc project và thiết lập kiến trúc cơ bản
+- [x] Thiết lập cấu hình ứng dụng: tên app, appId, URLs, tên DB file
+- [x] Setup GitHub Actions: build-all.yml
+- [x] Setup GitHub Actions: test.yml (jest)
+- [x] Thêm Claude bot vào contributors
+- [x] Viết đầy đủ tài liệu hệ thống trong docs/
+- [x] README.md chính thức của Phanle
 
 **Done khi:** CI/CD xanh, `npm run dev` chạy được, tất cả tài liệu có bản đầu

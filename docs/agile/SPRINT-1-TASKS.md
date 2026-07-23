@@ -1,38 +1,20 @@
-# Sprint 1 — Tasks
+# Sprint 1 — Task Checklist
 
-**Goal:** App chạy được với branding Phanle, repo GitHub, CI/CD xanh
-**Repo:** https://github.com/anhnhatdev/phanle.git
-**Bắt đầu:** 2026-07-23
-
----
-
-## Tasks
-
-## Tasks
-
-- [x] Tạo tài liệu kiến trúc & Agile trong folder `docs/`
-- [x] Git init + remote `https://github.com/anhnhatdev/phanle.git`
-- [x] `.gitignore` & `README.md` ban đầu
-- [x] Branch `feat/project-init`
-- [x] `package.json` với branding Phanle
-- [x] `tsconfig.json`, `tsconfig.electron.json`, `tsconfig.electron.prod.json`
-- [x] `vite.config.ts`, `tailwind.config.js`, `postcss.config.js`, `jest.config.js`
-- [x] Setup GitHub Actions workflows (`test.yml`, `build-all.yml`)
-- [ ] PR Template & Issue templates
-- [ ] **[Hỏi bạn]** Push branch `feat/project-init` & tạo PR lên `main` trên GitHub
+**Mục tiêu:** Khởi tạo dự án Phanle, thiết lập cấu trúc mã nguồn, cấu hình TypeScript, bundler Vite, Tailwind CSS, Jest và GitHub Actions CI/CD.
+**GitHub Repo:** `https://github.com/anhnhatdev/phanle.git`
+**Thời gian:** 2026-07-23 → 2026-08-06
 
 ---
 
-## Branding thay thế
+## Tiến độ Công việc (Tasks)
 
-| Cũ | Mới |
-|----|-----|
-| `Deplao` | `Phanle` |
-| `deplao` | `phanle` |
-| `com.Deplao.app` | `com.phanle.app` |
-| `deplao-tool.db` | `phanle-tool.db` |
-| `deplao-config.json` | `phanle-config.json` |
-| `deplao://` (scheme) | `phanle://` |
-| `babyvibe/deplao-builder` | `anhnhatdev/phanle` |
-| `deplaoapp.com` | `[remove/placeholder]` |
-| `babyvibe@users.noreply.github.com` | `anhnhatdev@users.noreply.github.com` |
+- [x] Thiết lập tài liệu PRD, Tech Stack, Architecture & Database Schema (`docs/`)
+- [x] Khởi tạo Git repository & liên kết remote `https://github.com/anhnhatdev/phanle.git`
+- [x] Tạo file `.gitignore` và `README.md` chính thức
+- [x] Tạo nhánh làm việc `feat/project-init`
+- [x] Cấu hình `package.json` cho ứng dụng Phanle
+- [x] Thiết lập TypeScript configs (`tsconfig.json`, `tsconfig.electron.json`, `tsconfig.electron.prod.json`)
+- [x] Thiết lập công cụ Build & Styling (`vite.config.ts`, `tailwind.config.js`, `postcss.config.js`, `jest.config.js`)
+- [x] Cấu hình GitHub Actions CI/CD workflows (`test.yml`, `build-all.yml`)
+- [x] Tạo GitHub PR Template và Issue Templates (`.github/`)
+- [ ] Push nhánh `feat/project-init` và mở Pull Request #1 lên `main` trên GitHub
