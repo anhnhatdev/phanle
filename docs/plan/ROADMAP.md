@@ -1,95 +1,85 @@
 # Roadmap — Phanle
 
-> Phát hành theo sprint 2 tuần/sprint | Bắt đầu: 2026-07-23
+> Kế hoạch phát triển theo Agile Scrum (2 tuần / Sprint) | Ngày bắt đầu: 2026-07-23
 
 ---
 
-## Tầm nhìn
+## Tầm nhìn sản phẩm
 
-**v1.0.0** — Đầy đủ tính năng tương đương PM cũ (Deplao), branding mới hoàn toàn sạch.
+Phát triển thành công giải pháp **Phanle v1.0.0** — Hệ thống desktop quản lý Zalo & Facebook cá nhân đa tài khoản tích hợp CRM, ERP, POS, Workflow và AI Assistant chuyên nghiệp.
 
 ---
 
-## Milestones
+## Các mốc phát triển chính (Milestones)
 
 ```
-Sprint 0  ─── [2026-07] Setup & Docs
-Sprint 1  ─── [2026-08] Branding + Cấu trúc cơ bản
-Sprint 2  ─── [2026-08] Auth & Đa tài khoản  ───► Alpha Internal
-Sprint 3  ─── [2026-08] Chat & Inbox
-Sprint 4  ─── [2026-09] CRM
-Sprint 5  ─── [2026-09] Workflow                ───► Beta
-Sprint 6  ─── [2026-09] AI Assistant
-Sprint 7  ─── [2026-10] ERP & Nhân viên
-Sprint 8  ─── [2026-10] POS & Tích hợp
-Sprint 9  ─── [2026-10] Báo cáo & Polish
-Sprint 10 ─── [2026-11] Test + Release          ───► v1.0.0
+Sprint 0  ─── [2026-07] Khởi tạo dự án & Kiến trúc tài liệu
+Sprint 1  ─── [2026-08] Khởi tạo Cấu trúc & Nền móng Ứng dụng
+Sprint 2  ─── [2026-08] Quản lý Tài khoản & Đăng nhập Zalo/FB  ───► Alpha Internal
+Sprint 3  ─── [2026-08] Trung tâm Chat & Hộp thư Gộp
+Sprint 4  ─── [2026-09] Quản lý Khách hàng CRM & Chiến dịch
+Sprint 5  ─── [2026-09] Engine Workflow Tự động hóa         ───► Beta Release
+Sprint 6  ─── [2026-09] Tích hợp AI Assistant Smart Reply
+Sprint 7  ─── [2026-10] Phân hệ ERP & Mô hình Boss ↔ Nhân viên
+Sprint 8  ─── [2026-10] Kết nối POS & Đối tác Vận chuyển
+Sprint 9  ─── [2026-10] Hệ thống Báo cáo & Tối ưu UX/UI
+Sprint 10 ─── [2026-11] Kiểm thử Toàn diện & Phát hành v1.0.0 ───► Production Release
 ```
 
 ---
 
-## Chi tiết từng milestone
+## Chi tiết kế hoạch các Sprint
 
-### 🔴 Sprint 0 — Setup (Current)
-**Goal:** Nền móng project
-- Tạo repo, cấu trúc, tài liệu
-- CI/CD pipeline
-- Không có feature
+### 🟢 Sprint 0 — Project Setup & Architecture
+**Mục tiêu:** Xây dựng tài liệu PRD, Tech Stack, DB Schema, CI/CD và quy trình Agile.
 
-### 🟡 Sprint 1 — Branding
-**Goal:** App chạy được, đúng brand
-- Copy source PM cũ, đổi toàn bộ branding
-- `npm run dev` thành công
-- CI/CD xanh
-- README mới
+### 🟡 Sprint 1 — App Core Skeleton
+**Mục tiêu:** Cấu hình hệ thống build, Tailwind CSS, Vite, Electron Main Process, SQLite connection.
+- Cấu hình package scripts và dev environment.
+- CI/CD tự động chạy Jest tests & build artifact.
 
-### 🟡 Sprint 2 — Auth Alpha
-**Goal:** Đăng nhập Zalo/FB + quản lý tài khoản
-- Deliverable: `alpha-internal` build cho dev test
+### 🟡 Sprint 2 — Auth & Multi-Account
+**Mục tiêu:** Quản lý phiên đăng nhập QR Code Zalo, cookie Facebook và Proxy per-account.
+- *Bàn giao:* Bản build `alpha-internal` cho kiểm thử nội bộ.
 
-### 🟡 Sprint 3 — Chat
-**Goal:** Chat đầy đủ tính năng
+### 🟡 Sprint 3 — Unified Chat
+**Mục tiêu:** Giao diện hộp thư gộp, gửi nhận tin nhắn văn bản, media, emoji, quick messages.
 
-### 🟡 Sprint 4 — CRM
-**Goal:** CRM cơ bản + Campaign
+### 🟡 Sprint 4 — CRM & Campaigns
+**Mục tiêu:** Quản lý liên hệ, gắn nhãn Zalo hai chiều, campaign gửi tin hàng loạt.
 
-### 🟡 Sprint 5 — Workflow + Beta
-**Goal:** Workflow editor hoàn chỉnh
-- Deliverable: `beta` build
+### 🟡 Sprint 5 — Workflow Engine & Beta
+**Mục tiêu:** Trình thiết kế quy trình kéo-thả, hỗ trợ Trigger và Action cơ bản.
+- *Bàn giao:* Bản build `beta` công khai.
 
-### 🟡 Sprint 6 — AI
-**Goal:** AI Assistant đầy đủ
+### 🟡 Sprint 6 — AI Assistant
+**Mục tiêu:** AI gợi ý câu trả lời, chatbot tự động 24/7 với OpenAI/Claude/Gemini.
 
-### 🟡 Sprint 7 — ERP
-**Goal:** Task, Calendar, Notes, Nhân viên, Boss↔Employee
+### 🟡 Sprint 7 — ERP & Staff Management
+**Mục tiêu:** Phân hệ Task, Notes, Calendar và mô hình giao tiếp Boss ↔ Nhân viên qua LAN/WAN.
 
-### 🟡 Sprint 8 — Integrations
-**Goal:** POS, Vận chuyển, Email
+### 🟡 Sprint 8 — POS & Integrations
+**Mục tiêu:** Kết nối KiotViet, Haravan, Sapo, GHN, GHTK.
 
-### 🟡 Sprint 9 — Polish
-**Goal:** Báo cáo, UX, bug fixes
+### 🟡 Sprint 9 — Reporting & Optimization
+**Mục tiêu:** Biểu đồ báo cáo hiệu suất, tối ưu bộ nhớ và tốc độ phản hồi.
 
 ### 🟢 Sprint 10 — Release v1.0.0
-**Goal:** Test đầy đủ, release chính thức
-- Tất cả CI/CD xanh
-- Manual test pass
-- GitHub Release v1.0.0
+**Mục tiêu:** Đóng gói hoàn chỉnh bản thương mại cho Windows, macOS và Linux.
 
 ---
 
-## Versioning
+## Định danh Phiên bản (Versioning)
 
-Format: `YY.M.PATCH` (theo PM cũ)
-- `26.7.x` → July 2026
-- Patch tăng theo số fix/release nhỏ
+Sử dụng định dạng Semantic Versioning: `vMAJOR.MINOR.PATCH` (Ví dụ: `v1.0.0`, `v1.1.0`).
 
 ---
 
-## Release Types
+## Phân loại bản phát hành
 
-| Type | Nhánh | Điều kiện |
-|------|-------|----------|
-| Alpha | feature/... | Dev internal test |
-| Beta | main | Feature complete, cần user test |
-| RC | main + tag | Bug fixes only |
-| Stable | main + tag | Stable release |
+| Loại | Nhánh Git | Điều kiện nghiệm thu |
+|------|-----------|----------------------|
+| Alpha | `feat/...` | Kiểm thử tính năng mới nội bộ |
+| Beta | `main` | Đã ghép nối các module, sẵn sàng test diện rộng |
+| RC | `main` | Đã sửa toàn bộ lỗi critical |
+| Stable | `main` (Tag `v1.0.0`) | Sẵn sàng phát hành |

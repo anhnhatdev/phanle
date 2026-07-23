@@ -1,6 +1,6 @@
 # Tech Stack — Phanle
 
-> Kế thừa 100% từ PM cũ, chỉ đổi branding.
+> Kiến trúc và công nghệ hiện đại cho phần mềm desktop Phanle.
 
 ## Core
 

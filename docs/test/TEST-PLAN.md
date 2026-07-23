@@ -46,7 +46,7 @@
 ## Test config hiện tại (jest.config.js)
 
 ```js
-// jest.config.js từ PM cũ
+// Cấu hình jest.config.js chuẩn
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',

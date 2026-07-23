@@ -6,7 +6,7 @@
 
 ## Tổng quan
 
-Tên file DB: `phanle-tool.db` (thay vì `deplao-tool.db`)
+Tên file DB: `phanle-tool.db`
 Vị trí mặc định: `%APPDATA%/Phanle/` (Windows), `~/Library/Application Support/Phanle/` (macOS)
 Workspace: người dùng có thể đổi thư mục lưu trữ
 
