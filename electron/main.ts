@@ -1,5 +1,6 @@
 import { app, BrowserWindow, ipcMain } from 'electron';
 import * as path from 'path';
+import { registerAllIpcHandlers } from './ipc';
 
 let mainWindow: BrowserWindow | null = null;
 
@@ -38,6 +39,7 @@ function createWindow(): void {
 }
 
 app.whenReady().then(() => {
+  registerAllIpcHandlers();
   createWindow();
 
   app.on('activate', () => {
