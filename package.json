@@ -12,7 +12,7 @@
     "build:electron": "tsc -p tsconfig.electron.json",
     "build:renderer": "vite build",
     "production": "npm run build:bridge-e2ee && tsc -p tsconfig.electron.prod.json && node scripts/strip-console.js && npm run build:renderer && electron-builder --publish never",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "author": "anhnhatdev <anhnhatdev@users.noreply.github.com>",
   "homepage": "https://github.com/anhnhatdev/phanle",
