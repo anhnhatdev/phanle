@@ -8,23 +8,18 @@
 
 ## Tasks
 
-- [ ] Copy toàn bộ source từ PM cũ → PM mới
-- [ ] Đổi branding: package.json (name, appId, description, URLs)
-- [ ] Đổi branding: electron/main.ts (DB name, config name, scheme)
-- [ ] Đổi branding: GitHub Actions workflows (repo name, app name)
-- [ ] Đổi branding: README.md mới (clean, không lộ PM cũ)
-- [ ] Tìm & thay tất cả string "deplao" / "Deplao" còn sót
-- [ ] Git init + remote add origin
-- [ ] .gitignore đúng
-- [ ] npm install --legacy-peer-deps → thành công
-- [ ] npm run dev → chạy được (verify)
-- [ ] Tạo branch `feat/sprint1-branding` 
-- [ ] Commit code lên branch
-- [ ] **[Hỏi bạn]** tạo PR → main trên GitHub
-- [ ] Setup GitHub Actions: test.yml
-- [ ] Setup GitHub Actions: build-all.yml (đổi repo name)
-- [ ] PR template + Issue templates
-- [ ] **[Hỏi bạn]** merge PR + push main
+## Tasks
+
+- [x] Tạo tài liệu kiến trúc & Agile trong folder `docs/`
+- [x] Git init + remote `https://github.com/anhnhatdev/phanle.git`
+- [x] `.gitignore` & `README.md` ban đầu
+- [x] Branch `feat/project-init`
+- [x] `package.json` với branding Phanle
+- [x] `tsconfig.json`, `tsconfig.electron.json`, `tsconfig.electron.prod.json`
+- [x] `vite.config.ts`, `tailwind.config.js`, `postcss.config.js`, `jest.config.js`
+- [x] Setup GitHub Actions workflows (`test.yml`, `build-all.yml`)
+- [ ] PR Template & Issue templates
+- [ ] **[Hỏi bạn]** Push branch `feat/project-init` & tạo PR lên `main` trên GitHub
 
 ---
 
