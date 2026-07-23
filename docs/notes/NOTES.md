@@ -13,6 +13,8 @@
 5. **Git Flow chuẩn Agile Scrum** — làm việc trên nhánh tính năng (`feat/...`, `fix/...`), tạo PR lên `main`, review và merge.
 6. **Rà soát mã nguồn & Thương hiệu độc lập** — Thường xuyên rà soát mã nguồn, cấu hình, tài liệu để đảm bảo KHÔNG có bất kỳ thông tin hay nội dung nào đề cập đến việc copy từ dự án cũ hoặc các tên dự án cũ (`deplao`, `deplao-builder`, `babyvibe`). Tất cả tài sản mã nguồn và thương hiệu phải hoàn toàn nguyên bản và nhất quán với tên dự án **Phanle** (`anhnhatdev/phanle`).
 7. **Merge PR bằng Squash and Merge** — Tất cả PR khi merge vào `main` BẮT BUỘC chọn nút **Squash and merge** trên GitHub UI để gộp toàn bộ commit của PR thành 1 commit duy nhất trên `main`, giúp nhánh `main` luôn gọn gàng và nguyên bản.
+8. **Phong cách viết tài liệu** — Trình bày súc tích, ngắn gọn, dùng định dạng markdown chuẩn (`-`), không lạm dụng icon/emoji hoặc văn phong robot hô hào.
+9. **Ghi nhận Claude Contributor** — Đẩy các commit liên quan đến test, cấu hình, refactor... với thông tin tác giả hoặc Co-authored-by là Claude (`Claude <noreply@anthropic.com>`) để Claude xuất hiện ở danh sách Contributor trên GitHub.
 
 ---
 
