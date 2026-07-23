@@ -17,4 +17,9 @@
 - [x] Thiết lập công cụ Build & Styling (`vite.config.ts`, `tailwind.config.js`, `postcss.config.js`, `jest.config.js`)
 - [x] Cấu hình GitHub Actions CI/CD workflows (`test.yml`, `build-all.yml`)
 - [x] Tạo GitHub PR Template và Issue Templates (`.github/`)
-- [ ] Push nhánh `feat/project-init` và mở Pull Request #1 lên `main` trên GitHub
+- [x] Push nhánh `feat/project-init` và merge PR #1 vào `main` bằng `Squash and merge`
+- [x] Tạo nhánh `feat/app-skeleton`
+- [x] Thêm HTML entry point & Tailwind CSS global styles (`index.html`, `src/ui/index.css`)
+- [x] Thêm React UI root renderer (`src/ui/main.tsx`, `src/ui/App.tsx`)
+- [x] Thêm Electron Main Process entry point & Preload script (`electron/main.ts`, `electron/preload.ts`)
+- [ ] Push nhánh `feat/app-skeleton` và mở PR #2 lên `main` trên GitHub
