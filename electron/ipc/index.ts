@@ -3,6 +3,7 @@ import { registerDatabaseIpc } from './databaseIpc';
 import { registerLoginIpc } from './loginIpc';
 import { registerAccountIpc } from './accountIpc';
 import { registerWorkspaceIpc } from './workspaceIpc';
+import { registerProxyIpc } from './proxyIpc';
 
 export function registerAllIpcHandlers(): void {
   registerUtilIpc();
@@ -10,4 +11,5 @@ export function registerAllIpcHandlers(): void {
   registerLoginIpc();
   registerAccountIpc();
   registerWorkspaceIpc();
+  registerProxyIpc();
 }
