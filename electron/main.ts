@@ -1,6 +1,8 @@
 import { app, BrowserWindow, ipcMain } from 'electron';
 import * as path from 'path';
 import { registerAllIpcHandlers } from './ipc';
+import WorkspaceManager from '../src/services/workspace/WorkspaceManager';
+import DatabaseService from '../src/services/database/DatabaseService';
 
 let mainWindow: BrowserWindow | null = null;
 
@@ -39,6 +41,11 @@ function createWindow(): void {
 }
 
 app.whenReady().then(() => {
+  const userDataPath = app.getPath('userData');
+  const workspace = WorkspaceManager.getInstance(userDataPath);
+  workspace.load();
+  DatabaseService.getInstance().initialize(workspace.getDbPath());
+
   registerAllIpcHandlers();
   createWindow();
 
