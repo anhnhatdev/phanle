@@ -4,6 +4,7 @@ import { registerLoginIpc } from './loginIpc';
 import { registerAccountIpc } from './accountIpc';
 import { registerWorkspaceIpc } from './workspaceIpc';
 import { registerProxyIpc } from './proxyIpc';
+import { registerChatIpc } from './chatIpc';
 
 export function registerAllIpcHandlers(): void {
   registerUtilIpc();
@@ -12,4 +13,5 @@ export function registerAllIpcHandlers(): void {
   registerAccountIpc();
   registerWorkspaceIpc();
   registerProxyIpc();
+  registerChatIpc();
 }
