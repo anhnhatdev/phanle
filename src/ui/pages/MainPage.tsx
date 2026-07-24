@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { useAccountStore } from '../stores/accountStore';
 import { useAppStore } from '../stores/appStore';
 import { AccountSidebar } from '../components/AccountSidebar';
-import LoginPage from './LoginPage';
+import ConversationList from '../components/ConversationList';
+import ChatWindow from '../components/ChatWindow';
 
 declare global {
   interface Window {
@@ -31,8 +32,8 @@ export const MainPage: React.FC = () => {
   return (
     <div className="flex h-screen w-screen bg-slate-950 text-slate-100">
       <AccountSidebar onAddAccount={handleAddAccount} />
-      <main className="flex flex-1 flex-col items-center justify-center">
-        {accounts.length === 0 ? (
+      {accounts.length === 0 ? (
+        <main className="flex flex-1 flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-4 text-center">
             <p className="text-slate-500 text-sm">
               Chưa có tài khoản nào. Nhấn nút + để thêm tài khoản.
@@ -45,12 +46,13 @@ export const MainPage: React.FC = () => {
               Thêm tài khoản Zalo
             </button>
           </div>
-        ) : (
-          <p className="text-slate-500 text-sm">
-            Chọn tài khoản bên trái để bắt đầu.
-          </p>
-        )}
-      </main>
+        </main>
+      ) : (
+        <div className="flex flex-1 overflow-hidden">
+          <ConversationList />
+          <ChatWindow />
+        </div>
+      )}
     </div>
   );
 };
