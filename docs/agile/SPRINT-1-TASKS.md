@@ -1,6 +1,6 @@
 # Sprint 1 — Task Checklist
 
-**Mục tiêu:** Khởi tạo dự án Phanle, thiết lập cấu trúc mã nguồn, cấu hình TypeScript, bundler Vite, Tailwind CSS, Jest và GitHub Actions CI/CD.
+**Mục tiêu:** Khởi tạo dự án Phanle, thiết lập cấu hình ứng dụng, hệ thống dữ liệu, giao diện đa tài khoản và dịch vụ tin nhắn.
 **GitHub Repo:** `https://github.com/anhnhatdev/phanle.git`
 **Thời gian:** 2026-07-23 → 2026-08-06
 
@@ -8,18 +8,14 @@
 
 ## Tiến độ Công việc (Tasks)
 
-- [x] Thiết lập tài liệu PRD, Tech Stack, Architecture & Database Schema (`docs/`)
-- [x] Khởi tạo Git repository & liên kết remote `https://github.com/anhnhatdev/phanle.git`
-- [x] Tạo file `.gitignore` và `README.md` chính thức
-- [x] Tạo nhánh làm việc `feat/project-init`
-- [x] Cấu hình `package.json` cho ứng dụng Phanle
-- [x] Thiết lập TypeScript configs (`tsconfig.json`, `tsconfig.electron.json`, `tsconfig.electron.prod.json`)
-- [x] Thiết lập công cụ Build & Styling (`vite.config.ts`, `tailwind.config.js`, `postcss.config.js`, `jest.config.js`)
-- [x] Cấu hình GitHub Actions CI/CD workflows (`test.yml`, `build-all.yml`)
-- [x] Tạo GitHub PR Template và Issue Templates (`.github/`)
-- [x] Push nhánh `feat/project-init` và merge PR #1 vào `main` bằng `Squash and merge`
-- [x] Tạo nhánh `feat/app-skeleton`
-- [x] Thêm HTML entry point & Tailwind CSS global styles (`index.html`, `src/ui/index.css`)
-- [x] Thêm React UI root renderer (`src/ui/main.tsx`, `src/ui/App.tsx`)
-- [x] Thêm Electron Main Process entry point & Preload script (`electron/main.ts`, `electron/preload.ts`)
-- [ ] Push nhánh `feat/app-skeleton` và mở PR #2 lên `main` trên GitHub
+- [x] PR #1: Thiết lập tài liệu kiến trúc, PRD, Tech Stack, CI/CD workflows (`feat/project-init`)
+- [x] PR #2: Khởi tạo Electron Main Process & React UI Skeleton (`feat/app-skeleton`)
+- [x] PR #3: Thiết lập Data Models & DatabaseService SQLite (`feat/database-models`)
+- [x] PR #4: Xây dựng IPC Handlers & Bridge truyền thông (`feat/ipc-handlers`)
+- [x] PR #5: Dịch vụ ZaloAuthService & Đăng nhập QR IPC (`feat/zalo-auth-service`)
+- [x] PR #6: Giao diện Login UI & QR Code Flow (`feat/login-ui`)
+- [x] PR #7: Quản lý đa tài khoản & AccountSidebar UI (`feat/account-manager`)
+- [x] PR #8: Dịch vụ WorkspaceManager & Đường dẫn SQLite động (`feat/workspace-manager`)
+- [x] PR #9: Dịch vụ ProxyManager & Cấu hình mạng (`feat/proxy-manager`)
+- [x] PR #10: Dịch vụ ChatService & Lưu trữ tin nhắn (`feat/chat-service`)
+- [ ] PR #11: Giao diện Hộp thư gộp Unified Inbox UI (`feat/chat-ui`)

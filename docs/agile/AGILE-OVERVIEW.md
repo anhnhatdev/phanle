@@ -104,11 +104,11 @@ P3 - Low (Backlog xa)
 - [x] Tạo GitHub repo `phanle` (chính)
 - [x] Setup nhánh main + branch protection
 - [x] Khởi tạo cấu trúc project và thiết lập kiến trúc cơ bản
-- [x] Thiết lập cấu hình ứng dụng: tên app, appId, URLs, tên DB file
-- [x] Setup GitHub Actions: build-all.yml
-- [x] Setup GitHub Actions: test.yml (jest)
+- [x] Thiết lập cấu hình ứng dụng: package.json, tsconfig, vite, tailwind, jest
+- [x] Setup GitHub Actions: test.yml & build-all.yml
 - [x] Thêm Claude bot vào contributors
-- [x] Viết đầy đủ tài liệu hệ thống trong docs/
-- [x] README.md chính thức của Phanle
+- [x] Xây dựng Data Models, DatabaseService SQLite & WorkspaceManager
+- [x] Xây dựng ProxyManager & ChatService
+- [x] Viết đầy đủ tài liệu hệ thống và unit tests đi kèm mỗi module
 
-**Done khi:** CI/CD xanh, `npm run dev` chạy được, tất cả tài liệu có bản đầu
+**Trạng thái:** Tất cả PR từ #1 đến #10 đã merge thành công vào main với CI/CD xanh.
